@@ -1,0 +1,63 @@
+/*
+filename: style.css
+Contributors: Morgan Hopkins (106188591),
+created: 28/8/2025
+last modified: 1/9/2025
+description: css stylesheet for group project
+*/
+
+/*
+
+SUGGESTED PALETTE:
+Trust Blue	rgb(0, 62, 114)	Primary Colour - headers, navigation bars, and key buttons
+Digital Teal	rgb(0, 120, 148)	Secondary/Accent Colour
+Warm Grey	rgb(112, 112, 112)	Neutral Text & Background
+Clean White	rgb(250, 250, 250)	Background.
+
+Energy Coral	rgb(255, 99, 97)	Highlight/Alert Colour
+Success Moss	rgb(104, 143, 102)	Positive Action
+Light Sky	rgb(232, 244, 252)	Light Background
+
+colours suggested by deepseek, have not yet been tested or approved by group
+--MH
+
+*/
+
+/* set color constants here */
+:root {
+            --primary-color: rgb(0, 62, 114);
+            --secondary-color: rgb(0, 120, 148);
+            --neutral-color: rgb(112, 112, 112);
+            --highlight-color: rgb(255, 99, 97);
+        }
+
+/* all elements */
+* { 
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--neutral-color);
+}
+
+a {
+    color: var(--highlight-color);
+}
+
+/* nav bar */
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+          text-decoration: none;
+          padding:0.2em 0.6em;
+          border: 4px solid var(--secondary-color);
+          font-weight: bold
+         } 
+
+nav a:hover {
+    text-transform: uppercase;
+}
