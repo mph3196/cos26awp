@@ -12,10 +12,7 @@ SUGGESTED PALETTE:
 Trust Blue	rgb(0, 62, 114)	Primary Colour - headers, navigation bars, and key buttons
 Digital Teal	rgb(0, 120, 148)	Secondary/Accent Colour
 Warm Grey	rgb(112, 112, 112)	Neutral Text & Background
-Clean White	rgb(250, 250, 250)	Background.
-
 Energy Coral	rgb(255, 99, 97)	Highlight/Alert Colour
-Success Moss	rgb(104, 143, 102)	Positive Action
 Light Sky	rgb(232, 244, 252)	Light Background
 
 colours suggested by deepseek, have not yet been tested or approved by group
@@ -32,48 +29,48 @@ colours suggested by deepseek, have not yet been tested or approved by group
             --light-background: rgb(232, 244, 252);
         }
 
-/* all elements */
+/* whole page */
 * { 
     font-family: Calibri, Arial, Helvetica, sans-serif;
+    color: var(--neutral-color);
     background-color: var(--primary-color)
-}
-
-body {
-    background-color: var(--neutral-color);
 }
 
 a {
     color: var(--highlight-color);
 }
 
-iframe {
-    display: flex;  
-    width: 80%;
-    border: none;
-}
-
-/* banner */
-.banner-content {
-    color: var(--secondary-color)
+/* header */
+header {
+    display: flex;
+    justify-content: left;
 }
 
 /* nav bar */
 nav {
     background-color: var(--secondary-color);
     display: flex;
-    justify-content: space-between;
-    padding: none;
-    height: 2rem;
+    justify-content: right;
+    padding-right: 12em;
+    border: 2px solid var(--neutral-color);
+    border-radius: 30px;
 }
 
-nav a {
-            
+nav a {           
     text-decoration: none;
-    padding:0.2em 0.6em;
-    border: 4px solid var(--neutral-color);
+    padding:0.2em 3em;
+    border: 2px solid var(--light-background);
+    border-radius: 20%;
     font-weight: bold
     } 
 
 nav a:hover {
     text-transform: uppercase;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: right;
+
 }
