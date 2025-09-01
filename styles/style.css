@@ -23,12 +23,13 @@ colours suggested by deepseek, have not yet been tested or approved by group
 
 */
 
-/* set color constants here */
+/* set page constants here */
 :root {
             --primary-color: rgb(0, 62, 114);
             --secondary-color: rgb(0, 120, 148);
             --neutral-color: rgb(112, 112, 112);
             --highlight-color: rgb(255, 99, 97);
+            --light-background: rgb(232, 244, 252);
         }
 
 /* all elements */
@@ -44,11 +45,24 @@ a {
     color: var(--highlight-color);
 }
 
+iframe {
+  display: flex;  
+  width: 80%;
+  border: none;
+}
+
+/* banner */
+.banner-content {
+    color: var(--secondary-color)
+}
+
 /* nav bar */
 nav {
     background-color: var(--primary-color);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: none;
+    height: 2rem;
 }
 
 nav a {
