@@ -1,76 +1,61 @@
-/*
-filename: style.css
-Contributors: Morgan Hopkins (106188591),
-created: 28/8/2025
-last modified: 1/9/2025
-description: css stylesheet for group project
-*/
-
-/*
-
-SUGGESTED PALETTE:
-Trust Blue	rgb(0, 62, 114)	Primary Colour - headers, navigation bars, and key buttons
-Digital Teal	rgb(0, 120, 148)	Secondary/Accent Colour
-Warm Grey	rgb(112, 112, 112)	Neutral Text & Background
-Energy Coral	rgb(255, 99, 97)	Highlight/Alert Colour
-Light Sky	rgb(232, 244, 252)	Light Background
-
-colours suggested by deepseek, have not yet been tested or approved by group
---MH
-
-*/
-
-/* set page constants here */
-:root {
-            --primary-color: rgb(0, 62, 114);
-            --secondary-color: rgb(0, 120, 148);
-            --neutral-color: rgb(112, 112, 112);
-            --highlight-color: rgb(255, 99, 97);
-            --light-background: rgb(232, 244, 252);
-        }
-
-/* whole page */
-* { 
-    font-family: Calibri, Arial, Helvetica, sans-serif;
-    color: var(--neutral-color);
-    background-color: var(--primary-color)
-}
-
-a {
-    color: var(--highlight-color);
-}
-
-/* header */
 header {
-    display: flex;
-    justify-content: left;
+  display: flex;              
+  justify-content: space-between; 
+  align-items: center;        
+  background-color: #444754;  
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
-/* nav bar */
-nav {
-    background-color: var(--secondary-color);
-    display: flex;
-    justify-content: right;
-    padding-right: 12em;
-    border: 2px solid var(--neutral-color);
-    border-radius: 30px;
+header h1 {
+  color: #fff;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-nav a {           
-    text-decoration: none;
-    padding:0.2em 3em;
-    border: 2px solid var(--light-background);
-    border-radius: 20%;
-    font-weight: bold
-    } 
-
-nav a:hover {
-    text-transform: uppercase;
+body { 
+  background-color: white;
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  padding: 0;
 }
 
-/* footer */
-footer {
-    display: flex;
-    justify-content: right;
-
+.navbar { 
+  text-align: center; 
+  padding: 5px; 
+  margin: 0;       
+  padding: 0;
 }
+
+.navbar a { 
+  color: black; 
+  text-decoration: none; 
+  transition: transform  0.3s ease; 
+  display: inline-block; 
+  color: white;
+   margin-left: 20px;  
+} 
+
+.navbar a:hover {
+  transform: translateY(-5px);
+  color: white;
+} 
+
+.navbar a.active  { 
+  font-weight: bold;  
+  color: white;
+} 
+
+#footer {
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 10; 
+  display: inline;
+  
+}
+
+
+    
+
