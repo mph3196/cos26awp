@@ -56,6 +56,50 @@ body {
   
 }
 
+/* Style for the main heading */
+ body h1{
+  text-align: center;
+  margin-top: 20px;
+ }
 
-    
+/* Style for the about us paragraph */
+  p.aboutus {
+    width: 60%;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: center
+  }
 
+/* Style for container divs */
+  div.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+    text-decoration: square; 
+  }
+
+/* Style for unordered lists within containers */
+  div.container ul {
+    list-style-type: square;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  /* Header style for each container */
+  div.header {
+    background-color: #444754;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
