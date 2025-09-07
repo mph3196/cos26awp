@@ -10,9 +10,7 @@ description: css layout for JSM university job application page
     box-sizing: border-box;
 }
 
-body {
-    padding: 20px;
-}
+
 
 .container {
     max-width: 800px;

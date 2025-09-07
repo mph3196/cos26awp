@@ -106,7 +106,16 @@ body {
     padding: 10px;
     text-align: center;
     font-size: 24px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, sans-serif; 
     border-radius: 4px;
     margin-bottom: 15px;
+  }
+
+
+  aside{ 
+    width: 25%; 
+    float: right; 
+    border: 2px solid #444754;
+    margin: 25px;
+    padding: 10px;
   }
