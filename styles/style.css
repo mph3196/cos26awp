@@ -50,17 +50,25 @@ body {
 
 .navbar a.active  { 
   font-weight: bold;  
-  color: white;
+  border-bottom: 2px solid #fff;
 } 
 
-#footer {
-  position: fixed; 
-  bottom: 0;
-  left: 0;
-  width: 100%; 
-  z-index: 10; 
-  display: inline;
-  
+footer {
+  clear: both;
+  text-align: center;
+  background-color: #444754;
+  color: #fff;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #fff;
 }
 
 /* Style for the main heading */
