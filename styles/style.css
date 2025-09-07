@@ -1,3 +1,11 @@
+/*
+filename: style.css
+Authors: Jonathon Taylor (105118283), Morgan Hopkins (106188591), (105118283) Shaun Vambe 
+created: 28/8/2025
+last modified: 1/9/2025
+description: css stylesheet for group project
+*/
+
 header {
   display: flex;              
   justify-content: space-between; 
@@ -28,7 +36,6 @@ body {
 }
 
 .navbar a { 
-  color: black; 
   text-decoration: none; 
   transition: transform  0.3s ease; 
   display: inline-block; 

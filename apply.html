@@ -1,39 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Home page for JSM website" />
-  <meta name="keywords" content="HTML5, CSS layout, web technology project" />
-  <meta name="author" content="Morgan Hopkins, Jonathon Taylor, Shaun Vambe"  />
-  <title>JSM Web Technology Project</title>
-</head>
-<link rel="stylesheet" href="styles/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-<body>
-<header>
-  <h1><strong>Apply</strong></h1> 
-  <div class="navbar"> 
-    <a  href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
-    <a href="jobs.html"><i class="fa fa-fw fa-user"></i> Jobs</a> 
-    <a class="active" href="apply.html"><i class="fa fa-fw fa-search"></i> Apply</a> 
-    <a href="about.html"><i class="fa fa-fw fa-star"></i> About Us</a> 
-  </div> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Applications page for JSM University">
+    <meta name="keywords" content="HTML5, CSS layout, web technology project">
+    <meta name="author" content="Morgan Hopkins (106188591)">
+    <title>JSM University Job Applications</title>
 
-</header>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/apply-layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  </head>
+
+  <body>
+    <header>
+      <h1><strong>Apply</strong></h1> 
+      <div class="navbar"> 
+        <a  href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+        <a href="jobs.html"><i class="fa fa-fw fa-user"></i> Jobs</a> 
+        <a class="active" href="apply.html"><i class="fa fa-fw fa-search"></i> Apply</a> 
+        <a href="about.html"><i class="fa fa-fw fa-star"></i> About Us</a> 
+      </div> 
+
+    </header>
+
+      <!-- 
+
+      Required Form Fields:
+      Job reference number 	Exactly 5 alphanumeric characters 
+      First name 	Max 20 alpha characters x
+      Last name 	Max 20 alpha characters x
+      Date of birth 	dd/mm/yyyy NOT YET WORKING
+      Gender 	Radio buttons (fieldset + legend) 
+      Street Address 	Max 40 characters 
+      Suburb/Town 	Max 40 characters 
+      State 	Dropdown: VIC, NSW, QLD, NT, WA, SA, TAS, ACT 
+      Postcode 	Exactly 4 digits 
+      Email 	Valid format 
+      Phone number 	8–12 digits
+      Skill list 	Checkbox inputs; last item must read “Other skills…”
+      Other skills 	Textarea
+      
+      - MH
+
+      -->
 
 
-
-
-
-
-
-
-
-
-
-<section id="footer">
-      &copy; JSM 2025 
-      <a href="mailto:info@JSMUniversity.com">Contact us here!</a></footer>
+    <div class="container">
+      <!-- A form for JSM University Job Applications -->
+      <h2>Job Application Form</h2>
+      <form id="jobApplicationForm" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+        <!-- Job Reference Number -->
+        <div class="form-group">
+          <label for="jobRef">Job Reference Number <span class="required">*</span></label>
+          <input type="text" id="jobRef" name="jobRef" required pattern="[A-Za-z0-9]{5}"
+          title="Enter your 5 character Job Reference Number" minlength="5" maxlength="5">
+        </div>
+        
+        <!-- Personal Details -->
+        <div class="two-column">
+          <div class="form-group">
+            <label for="firstName">First Name <span class="required">*</span></label>
+            <input type="text" id="firstName" name="firstName" required pattern="[A-Za-z]{1, 20}"
+            title="Enter your first name, maximum 20 letters" maxlength="20">
+          </div>
+          
+          <div class="form-group">
+            <label for="lastName">Last Name <span class="required">*</span></label>
+            <input type="text" id="lastName" name="lastName" required pattern="[A-Za-z]{1, 20}"
+            title="Enter your last name, maximum 20 characters" maxlength="20">
+          </div>
+        </div>
+        
+        <!-- Date of Birth -->
+        <div class="form-group">
+          <label for="dob">Date of Birth <span class="required">*</span></label>
+          <input type="text" id="dob" name="dob" required placeholder="dd/mm/yyyy"
+          pattern="\d{4}-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])" title="Enter your date of birth in dd/mm/yyyy format">
+        </div>
+        
+        <!-- Gender -->
+        <fieldset>
+            <legend>Gender <span class="required">*</span></legend>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+                
+                <input type="radio" id="preferNotToSay" name="gender" value="preferNotToSay">
+                <label for="preferNotToSay">Prefer not to say</label>
+            </div>
+        </fieldset>
+        
+        <!-- Address -->
+        <div class="form-group">
+            <label for="address">Street Address <span class="required">*</span></label>
+            <input type="text" id="address" name="address" required title="Enter your street address" maxlength="40" >
+        </div>
+        
+        <div class="two-column">
+            <div class="form-group">
+                <label for="suburb">Suburb <span class="required">*</span></label>
+                <input type="text" id="suburb" name="suburb" required
+                title="Enter your suburb" maxlength="40">
+            </div>
+            
+            <div class="form-group">
+                <label for="state">State <span class="required">*</span></label>
+                <select id="state" name="state" required>
+                    <option value="">Please select</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="postcode">Postcode <span class="required">*</span></label>
+            <input type="text" id="postcode" name="postcode" required pattern="[0-9]"
+            title="Enter your postcode (exactly 4 digits)" minlength="4" maxlength="4">
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="two-column">
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              title="Enter a valid email address (e.g.: user@jsm.com)">
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="text" id="phone" name="phone" required pattern="[0-9]{8,12}"
+              title="Enter a phone number between 8 and 12 digits" minlength="8" maxlength="12">
+            </div>
+        </div>
+        
+        <!-- Skills -->
+        <fieldset>
+            <legend>Skills</legend>
+            <div class="checkbox-group">
+                <input type="checkbox" id="skill1" name="skills" value="communication">
+                <label for="skill1">Communication</label>
+                
+                <input type="checkbox" id="skill2" name="skills" value="teamwork">
+                <label for="skill2">Teamwork</label>
+                
+                <input type="checkbox" id="skill3" name="skills" value="problemSolving">
+                <label for="skill3">Problem Solving</label>
+                
+                <input type="checkbox" id="skill4" name="skills" value="leadership">
+                <label for="skill4">Leadership</label><br>
+                
+                <input type="checkbox" id="otherSkills" name="skills" value="other">
+                <label for="otherSkills">Other skills...</label>
+            </div>
+            
+            <div class="form-group">
+                <label for="otherSkillsText">Please specify other skills:</label>
+                <textarea id="otherSkillsText" name="otherSkillsText" rows="4" title="Specify other skills here"></textarea>
+            </div>
+        </fieldset>
+        
+        <div class="form-buttons">
+          <button type="submit" id="submit" title="Submit your application">Submit Application</button>
+          <button type="reset" id="reset" title="Clear this form">Clear Form</button>
+        </div>
+        <span class="required" id="requiredNote" style="font-style: italic;">* Fields are required</span>
+      </form>
     </div>
-</body>
+
+    <footer>
+        &copy; JSM 2025 
+        <a href="mailto:info@JSMUniversity.com">Contact us here!</a>
+    </footer>
+  </body>
 </html>
