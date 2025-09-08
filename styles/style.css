@@ -6,6 +6,7 @@ last modified: 1/9/2025
 description: css stylesheet for group project
 */
 
+/* Start of home page styles*/
 header {
   display: flex;              
   justify-content: space-between; 
@@ -14,27 +15,23 @@ header {
   padding: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
-
 header h1 {
   color: #fff;
   margin: 0;
   font-family: Arial, sans-serif;
 }
-
 body { 
   background-color: white;
   font-family: Arial, sans-serif; 
   margin: 0; 
   padding: 0;
 }
-
 .navbar { 
   text-align: center; 
   padding: 5px; 
   margin: 0;       
   padding: 0;
 }
-
 .navbar a { 
   text-decoration: none; 
   transition: transform  0.3s ease; 
@@ -42,17 +39,14 @@ body {
   color: white;
    margin-left: 20px;  
 } 
-
 .navbar a:hover {
   transform: translateY(-5px);
   color: white;
 } 
-
 .navbar a.active  { 
   font-weight: bold;  
   border-bottom: 2px solid #fff;
 } 
-
 footer {
   clear: both;
   text-align: center;
@@ -61,15 +55,15 @@ footer {
   padding: 15px;
   margin-top: 30px;
 }
-
 footer a {
   color: #ffcc00;
   text-decoration: underline;
 }
-
 footer a:hover {
   color: #fff;
 }
+/* END of home page styles */
+
 
 /* Style for the main heading */
  body h1{
@@ -119,7 +113,7 @@ footer a:hover {
     margin-bottom: 15px;
   }
 
-
+/*jobs page styles */
   aside{ 
   width: 25%; 
   float: right; 
@@ -131,7 +125,7 @@ footer a:hover {
   margin-top: 5%;
   }
  .jobscontainer{
-  width: 70%;
+  width: 80%;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -148,6 +142,24 @@ footer a:hover {
   margin-top: 15px;
   color: #222;
   font-size: 1.2em;
+}
+.apply-button {
+  margin-top: 25px;
+  text-align: left;
+}
+.apply-button a {
+  display: inline-block;
+  background-color: #444754;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.apply-button a:hover {
+  background-color: #333;
+  transform: translateY(-2px);
 }
 
 
