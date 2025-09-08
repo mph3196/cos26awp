@@ -76,7 +76,7 @@
         <div class="form-group">
           <label for="dob">Date of Birth <span class="required">*</span></label>
           <input type="text" id="dob" name="dob" required placeholder="dd/mm/yyyy"
-          pattern="\d{4}-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])" title="Enter your date of birth in dd/mm/yyyy format">
+          pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/\d{4}" title="Enter your date of birth in dd/mm/yyyy format">
         </div>
         
         <!-- Gender -->
@@ -128,7 +128,7 @@
         
         <div class="form-group">
             <label for="postcode">Postcode <span class="required">*</span></label>
-            <input type="text" id="postcode" name="postcode" required pattern="[0-9]"
+            <input type="text" id="postcode" name="postcode" required pattern="[0-9]{4}"
             title="Enter your postcode (exactly 4 digits)" minlength="4" maxlength="4">
         </div>
         
