@@ -377,6 +377,10 @@ aside:hover {
   width: 80%;
 }
 
+#address {
+  width: 90%;
+}
+
 .form-container {
   display: grid;
   max-width: 60%;
@@ -406,6 +410,7 @@ textarea {
   border: 1px solid #dddddd;
   border-radius: 4px;
   font-size: 16px;
+  resize: none;
 }
 
 .radio-group, .checkbox-group {
