@@ -90,16 +90,28 @@
             <legend>Gender <span class="required">*</span></legend>
             <div class="radio-group">
                 <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">Male</label>
+                <label for="male">
+                  Male
+                  <span class="radio-button"></span>
+                </label>
                 
                 <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
+                <label for="female">
+                  Female
+                  <span class="radio-button"></span>
+                </label>
                 
                 <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label>
+                <label for="other">
+                  Other
+                  <span class="radio-button"></span>
+                </label>
                 
                 <input type="radio" id="preferNotToSay" name="gender" value="preferNotToSay">
-                <label for="preferNotToSay">Prefer not to say</label>
+                <label for="preferNotToSay">
+                  Prefer not to say
+                  <span class="radio-button"></span>
+                </label>
             </div>
         </fieldset>
         
@@ -157,25 +169,35 @@
         <fieldset>
             <legend>Skills</legend>
             <div class="checkbox-group">
-                <input type="checkbox" id="skill1" name="skills" value="communication">
-                <label for="skill1">Communication</label>
+                <label class="checkmark-container">
+                    <input type="checkbox" id="skill1" name="skills" value="communication">
+                    Communication
+                    <span class="checkmark"></span>
+                </label>
                 
-                <input type="checkbox" id="skill2" name="skills" value="teamwork">
-                <label for="skill2">Teamwork</label>
+                <label class="checkmark-container">
+                    <input type="checkbox" id="skill2" name="skills" value="teamwork">
+                    Teamwork
+                    <span class="checkmark"></span>
+                </label>
                 
-                <input type="checkbox" id="skill3" name="skills" value="problemSolving">
-                <label for="skill3">Problem Solving</label>
+                <label class="checkmark-container">
+                    <input type="checkbox" id="skill3" name="skills" value="problemSolving">
+                    Problem Solving
+                    <span class="checkmark"></span>
+                </label>
                 
-                <input type="checkbox" id="skill4" name="skills" value="leadership">
-                <label for="skill4">Leadership</label><br>
+                <label class="checkmark-container">
+                    <input type="checkbox" id="skill4" name="skills" value="leadership">
+                    Leadership
+                    <span class="checkmark"></span>
+                </label>
                 
-                <input type="checkbox" id="otherSkills" name="skills" value="other">
-                <label for="otherSkills">Other skills...</label>
-            </div>
-            
-            <div class="form-group">
-                <label for="otherSkillsText">Please specify other skills:</label>
-                <textarea id="otherSkillsText" name="otherSkillsText" rows="4" title="Specify other skills here"></textarea>
+                <label class="checkmark-container">
+                    <input type="checkbox" id="otherSkills" name="skills" value="other">
+                    Other skills
+                    <span class="checkmark"></span>
+                </label>
             </div>
         </fieldset>
         
