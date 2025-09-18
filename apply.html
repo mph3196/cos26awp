@@ -10,15 +10,12 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/apply-layout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <styles>
-      
-    </styles>
   </head>
 
   <body>
     <header>
       <div class="header-left">
-        <img src="images/logo1.png" alt="JSM University Logo" class="header-logo" />
+        <img src="images/logo1.png" alt="JSM University Logo" class="header-logo">
         <h1><strong>Apply</strong></h1> 
       </div>
 
@@ -29,28 +26,6 @@
         <a href="about.html"><i class="fa fa-fw fa-star" ></i> About Us</a> 
       </nav> 
     </header>
-
-      <!-- 
-
-      Required Form Fields:
-      Job reference number 	Exactly 5 alphanumeric characters 
-      First name 	Max 20 alpha characters x
-      Last name 	Max 20 alpha characters x
-      Date of birth 	dd/mm/yyyy WORKING NOW - SV
-      Gender 	Radio buttons (fieldset + legend) 
-      Street Address 	Max 40 characters 
-      Suburb/Town 	Max 40 characters 
-      State 	Dropdown: VIC, NSW, QLD, NT, WA, SA, TAS, ACT 
-      Postcode 	Exactly 4 digits 
-      Email 	Valid format 
-      Phone number 	8–12 digits
-      Skill list 	Checkbox inputs; last item must read “Other skills…”
-      Other skills 	Textarea
-      
-      - MH
-
-      -->
-
 
     <div class="form-container">
       <!-- A form for JSM University Job Applications -->
@@ -87,32 +62,32 @@
         
         <!-- Gender -->
         <fieldset>
-            <legend>Gender <span class="required">*</span></legend>
-            <div class="radio-group">
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">
-                  Male
-                  <span class="radio-button"></span>
-                </label>
-                
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">
-                  Female
-                  <span class="radio-button"></span>
-                </label>
-                
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">
-                  Other
-                  <span class="radio-button"></span>
-                </label>
-                
-                <input type="radio" id="preferNotToSay" name="gender" value="preferNotToSay">
-                <label for="preferNotToSay">
-                  Prefer not to say
-                  <span class="radio-button"></span>
-                </label>
-            </div>
+          <legend>Gender <span class="required">*</span></legend>
+          <div class="radio-group">
+            <label class="radio-container">
+              <input type="radio" id="male" name="gender" value="male" required>
+              Male
+              <span class="radio-button"></span>
+            </label>
+            
+            <label class="radio-container">
+              <input type="radio" id="female" name="gender" value="female">
+              Female
+              <span class="radio-button"></span>
+            </label>
+            
+            <label class="radio-container">
+              <input type="radio" id="other" name="gender" value="other">
+              Other
+              <span class="radio-button"></span>
+            </label>
+            
+            <label class="radio-container">
+              <input type="radio" id="preferNotToSay" name="gender" value="preferNotToSay">
+              Prefer not to say
+              <span class="radio-button"></span>
+            </label>
+          </div>
         </fieldset>
         
         <!-- Address -->
@@ -198,6 +173,10 @@
                     Other skills
                     <span class="checkmark"></span>
                 </label>
+            </div>
+            <div class="form-group">
+                <label for="otherSkillsText">Please specify other skills:</label>
+                <textarea id="otherSkillsText" name="otherSkillsText" rows="4" title="Specify other skills here"></textarea>
             </div>
         </fieldset>
         

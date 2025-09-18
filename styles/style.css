@@ -2,11 +2,12 @@
 filename: style.css
 Authors: Jonathon Taylor (105118283), Morgan Hopkins (106188591), (105118283) Shaun Vambe 
 created: 28/8/2025
-last modified: 1/9/2025
+last modified: 18/9/2025
 description: css stylesheet for group project
 */
 
 /* Start of home page styles*/
+
 header {
   display: flex;              
   justify-content: space-between; 
@@ -15,17 +16,20 @@ header {
   padding: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
+
 header h1 {
   color: #fff;
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
 body { 
   background-color: white;
   font-family: Arial, sans-serif; 
   margin: 0; 
   padding: 0;
 }
+
 .navbar { 
   text-align: center; 
   padding: 5px; 
@@ -33,21 +37,25 @@ body {
   padding: 0;
   margin-left: auto;
 }
+
 .navbar a { 
   text-decoration: none; 
   transition: transform  0.3s ease; 
   display: inline-block; 
   color: white;
-   margin-left: 20px;  
+  margin-left: 20px;  
 } 
+
 .navbar a:hover {
   transform: translateY(-5px);
   color: white;
 } 
+
 .navbar a.active  { 
   font-weight: bold;  
   border-bottom: 2px solid #fff;
 } 
+
 footer {
   clear: both;
   text-align: center;
@@ -56,66 +64,68 @@ footer {
   padding: 15px;
   margin-top: 30px;
 }
+
 footer a {
   color: #ffcc00;
   text-decoration: underline;
 }
+
 footer a:hover {
   color: #fff;
 }
+
 /* END of home page styles */
 
-
 /* Style for the main heading */
- body h1{
+
+body h1{
   text-align: center;
   margin-top: 20px;
- }
+}
 
 /* Style for the about us paragraph */
-  p.aboutus {
-    width: 85%;
-    margin: 20px auto;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-    text-align: center
-  }
+p.aboutus {
+  width: 85%;
+  margin: 20px auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  text-align: center
+}
 
 /* Style for container divs */
-  div.container {
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    text-align: center;
-    text-decoration: square; 
-  }
+div.container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  text-align: center;
+}
 
 /* Style for unordered lists within containers */
-  div.container ul {
-    list-style-type: square;
-    padding-left: 20px;
-    text-align: left;
-  }
+div.container ul {
+  list-style-type: square;
+  padding-left: 20px;
+  text-align: left;
+}
 
-  /* Header style for each container */
-  div.header {
-    background-color: #444754;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    text-align: center;
-    font-size: 24px;
-    font-family: Arial, sans-serif; 
-    border-radius: 4px;
-    margin-bottom: 15px;
-  }
+/* Header style for each container */
+div.header {
+  background-color: #444754;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial, sans-serif; 
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
 
 /*jobs page styles */
-  aside{ 
+aside{ 
   width: 25%; 
   float: right; 
   border: 2px solid #444754;
@@ -124,8 +134,9 @@ footer a:hover {
   background-color: #f4f4f9;
   border-radius: 6px;
   margin-top: 10%;
-  }
- .jobscontainer{
+}
+
+.jobscontainer{
   width: 80%;
   margin: 20px auto;
   padding: 20px;
@@ -133,21 +144,25 @@ footer a:hover {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
-  }
+}
+
 .jobscontainer h2 {
   margin-top: 10px;
   font-size: 1.4em;
   color: #444754;
 }
+
 .jobscontainer h3 {
   margin-top: 15px;
   color: #222;
   font-size: 1.2em;
 }
+
 .apply-button {
   margin-top: 25px;
   text-align: left;
 }
+
 .apply-button a {
   display: inline-block;
   background-color: #444754;
@@ -158,12 +173,13 @@ footer a:hover {
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .apply-button a:hover {
   background-color: #333;
   transform: translateY(-2px);
 }
 
- .main-section {
+.main-section {
   background: linear-gradient(rgba(68, 71, 84, 0.8), rgba(68, 71, 84, 0.8)), url('../images/abstract.jpg');
   background-size: cover;
   background-position: center;
@@ -204,7 +220,6 @@ footer a:hover {
   margin-top: 15px;
   
 }
-
 
 .company-details {
   background-color: #f9f9f9;
@@ -258,6 +273,7 @@ table.funfacttable,td,th{border: 1px solid black;}
 table.funfacttable th, table.funfacttable td {
   padding: 15px;
 }
+
 table.funfacttable th {
   background-color: #444754;
   color: white;
@@ -268,18 +284,17 @@ h2#funfacts {
   margin-top: 20px;
 }
 
-  div.containerdetails {
-    width: 40%;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    text-align: left;
-    text-decoration: square; 
-    justify-content: space-between;
-  }
+div.containerdetails {
+  width: 40%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  text-align: left;
+  justify-content: space-between;
+}
 
 .group-photo {
   display: block;
@@ -294,30 +309,31 @@ div.containerdetails h2 {
   margin-bottom: 15px;
 }
 
-/* START OF APPLY PAGE STYLES */
+/* START OF APPLY PAGE STYLES
+    - Some help with debugging, transitions and effects from Deepseek V3 chat.deepseek.com
+*/
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
 .form-container {
-    display: grid;
-    max-width: 60%;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: grid;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 input[type="text"],
@@ -325,27 +341,27 @@ input[type="email"],
 input[type="date"],
 select,
 textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #dddddd;
-    border-radius: 4px;
-    font-size: 16px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 .radio-group, .checkbox-group {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .radio-group label, .checkbox-group label {
-    display: inline;
-    font-weight: normal;
-    margin-right: 15px;
+  display: inline;
+  font-weight: normal;
+  margin-right: 15px;
 }
 
 .checkbox-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Custom checkbox and radios made with help from w3schools
@@ -358,6 +374,7 @@ textarea {
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 16px;
+  transition: all 0.2s ease;
 }
 
 /* Hide the browser's default checkbox */
@@ -376,25 +393,28 @@ textarea {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: #eeeeee;
+  transition: all 0.2s ease;
 }
 
 /* On mouse-over, add a grey background color */
 .checkmark-container:hover input ~ .checkmark {
   background-color: #cccccc;
+  transform: scale(1.05);
 }
 
 /* When the checkbox is checked, add a background */
 .checkmark-container input:checked ~ .checkmark {
   background-color: #444754;
+  transform: scale(1.1);
 }
-
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
+  transition: all 0.2s ease;
 }
 
 /* Show the checkmark when checked */
@@ -402,77 +422,152 @@ textarea {
   display: block;
 }
 
-
 /* Custom checkmark styling */
 .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    transform: rotate(45deg);
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Custom radio button styling*/
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 27px;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+/* Hide default radio buttons */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create custom radio button */
+.radio-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 27px;
+  width: 27px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Add custom hover effects */
+.radio-container:hover .radio-button {
+  background-color: #dddddd;
+  transform: scale(1.05);
+}
+
+/* Add custom "checked" effects */
+.radio-container input:checked ~ .radio-button {
+  background-color: #444754;
+  transform: scale(1.1);
+}
+
+/* Create the checked indicator */
+.radio-button:after {
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 
+/* Show the indicator when checked */
+.radio-container input:checked ~ .radio-button:after {
+  display: block;
+}
+
+/* Style the indicator dot */
+.radio-button:after {
+  top: 9px;
+  left: 9px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
 fieldset {
-    border: 1px solid #444754;
-    border-radius: 4px;
-    padding: 15px;
-    margin-bottom: 20px;
+  border: 1px solid #444754;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
 legend {
-    font-weight: 600;
-    padding: 0 10px;
+  font-weight: 600;
+  padding: 0 10px;
 }
 
 .required {
-    color: navy;
+  color: #000088;
 }
 
 .error {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
+  color: #880000;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .two-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .form-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: space-between;
-    margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .form-buttons button {
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 4px;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .form-buttons button[type="submit"] {
-    background-color: #444754;
-    flex: 1;
+  background-color: #444754;
+  flex: 1;
 }
 
 .form-buttons button[type="reset"] {
-    background-color: #444754;
-    max-width: 30%;
-    flex: 0 1 30%;
+  background-color: #444754;
+  max-width: 30%;
+  flex: 0 1 30%;
 }
 
 .form-buttons button:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.form-buttons button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 /* END OF APPLY PAGE STYLES */
