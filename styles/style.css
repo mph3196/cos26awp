@@ -349,11 +349,12 @@ textarea {
 }
 
 .radio-group, .checkbox-group {
+  display: flex;
+  justify-content: space-between;
   margin: 10px 0;
 }
 
 .radio-group label, .checkbox-group label {
-  display: inline;
   font-weight: normal;
   margin-right: 15px;
 }
