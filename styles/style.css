@@ -443,6 +443,18 @@ textarea {
   transition: all 0.2s ease;
 }
 
+/* Add focus indicators to radio and checkbox buttons for accessibility 
+    - focus indicators made by Deepseek V3 chat.deepseek.com */
+.checkmark-container input:focus ~ .checkmark {
+  outline: 2px solid #4447ff;
+  outline-offset: 2px;
+}
+
+.radio-container input:focus ~ .radio-button {
+  outline: 2px solid #4447ff;
+  outline-offset: 2px;
+}
+
 /* Hide the browser's default checkbox */
 .checkmark-container input {
   position: absolute;
