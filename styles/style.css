@@ -383,9 +383,9 @@ aside:hover {
 
 .form-container {
   display: grid;
-  max-width: 60%;
+  max-width: 70%;
   margin: 0 auto;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
@@ -415,7 +415,7 @@ textarea {
 
 .radio-group, .checkbox-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 10px 0;
 }
 
@@ -574,6 +574,7 @@ fieldset {
   border-radius: 4px;
   padding: 15px;
   margin-bottom: 20px;
+  min-width: 0;
 }
 
 legend {
@@ -583,6 +584,12 @@ legend {
 
 .required {
   color: #000088;
+}
+
+#requiredNote {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
 }
 
 .error {
@@ -601,7 +608,7 @@ legend {
   display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 20px;
 }
 
@@ -617,6 +624,7 @@ legend {
 
 .form-buttons button[type="submit"] {
   background-color: #444754;
+  max-width: 30%;
   flex: 1;
 }
 
@@ -626,10 +634,16 @@ legend {
   flex: 0 1 30%;
 }
 
-.form-buttons button:hover {
-  opacity: 0.9;
+.form-buttons button[type=submit]:hover {
+  background-color: #4447ff;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.form-buttons button[type="reset"]:hover {
+  background-color: #ff4754;
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .form-buttons button:active {
@@ -638,3 +652,22 @@ legend {
 }
 
 /* END OF APPLY PAGE STYLES */
+
+/* Media queries for responsiveness
+  - These were created by Deepseek V3 chat.deepseek.com */
+@media (max-width: 768px) {
+  .form-container {
+    max-width: 95%;
+    padding: 15px;
+  }
+  
+  .two-column {
+    grid-template-columns: 1fr; /* Stack columns on mobile */
+    gap: 10px;
+  }
+  
+  .radio-group, .checkbox-group {
+    flex-direction: column; /* Stack radio buttons on mobile */
+    align-items: flex-start;
+  }
+}
