@@ -31,6 +31,7 @@ body {
   padding: 5px; 
   margin: 0;       
   padding: 0;
+  margin-left: auto;
 }
 .navbar a { 
   text-decoration: none; 
@@ -73,7 +74,7 @@ footer a:hover {
 
 /* Style for the about us paragraph */
   p.aboutus {
-    width: 60%;
+    width: 85%;
     margin: 20px auto;
     font-size: 18px;
     line-height: 1.6;
@@ -281,4 +282,133 @@ legend {
 
 
 
+ .main-section {
+  background: linear-gradient(rgba(68, 71, 84, 0.8), rgba(68, 71, 84, 0.8)), url('../images/abstract.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.main-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  
+}
+
+.main-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
  
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-logo {
+  height: 60px;
+  width: auto;
+  border-radius: 5px;
+  margin-top: 15px;
+  
+}
+
+
+.company-details {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.company-details h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #444754;
+}
+
+.company-details p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.details-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.details-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+h2.team {
+  text-align: center;
+  margin-top: 20px;
+}
+
+table.funfacttable {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+table.funfacttable,td,th{border: 1px solid black;}
+
+table.funfacttable th, table.funfacttable td {
+  padding: 15px;
+}
+table.funfacttable th {
+  background-color: #444754;
+  color: white;
+}
+
+h2#funfacts {
+  text-align: center;
+  margin-top: 20px;
+}
+
+  div.containerdetails {
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: left;
+    text-decoration: square; 
+    justify-content: space-between;
+  }
+
+.group-photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+div.containerdetails h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
