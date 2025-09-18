@@ -317,6 +317,38 @@ div.containerdetails h2 {
   box-sizing: border-box;
 }
 
+#jobRef {
+  width: 120px;
+}
+
+#dob {
+  width: 120px;
+}
+
+#firstName, #lastName {
+  width: 80%;
+}
+
+#postcode {
+  width: 120px;
+}
+
+#suburb {
+  width: 60%;
+}
+
+#state {
+  width: 30%
+}
+
+#email {
+  width: 80%;
+}
+
+#phone {
+  width: 80%;
+}
+
 .form-container {
   display: grid;
   max-width: 60%;
@@ -534,6 +566,7 @@ legend {
 
 .form-buttons {
   display: flex;
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
   justify-content: space-between;
   margin-top: 20px;
