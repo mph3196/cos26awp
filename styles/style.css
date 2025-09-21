@@ -8,7 +8,7 @@ description: css stylesheet for group project
 
 /* Start of home page styles*/
 
-header {
+header { /* Header Styles*/
   display: flex;              
   justify-content: space-between; 
   align-items: center;        
@@ -23,14 +23,14 @@ header h1 {
   font-family: Arial, sans-serif;
 }
 
-body { 
+body { /* Body Styles*/
   background-color: white;
   font-family: Arial, sans-serif; 
   margin: 0; 
   padding: 0;
 }
 
-.navbar { 
+.navbar { /* Start of home page styles*/
   text-align: center; 
   padding: 5px; 
   margin: 0;       
