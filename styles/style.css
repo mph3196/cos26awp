@@ -1,6 +1,6 @@
 /*
 filename: style.css
-Authors: Jonathon Taylor (105118283), Morgan Hopkins (106188591), (105118283) Shaun Vambe 
+Authors: Jonathon Taylor (105118283), Morgan Hopkins (106188591), (105920789) Shaun Vambe 
 created: 28/8/2025
 last modified: 21/9/2025
 description: css stylesheet for group project
@@ -92,8 +92,33 @@ p.aboutus {
   font-size: 18px;
   line-height: 1.6;
   color: #333;
-  text-align: center
+  text-align: center;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  p.aboutus {
+    font-size: 16px;
+    width: 95%;
+  }
+
+  div.container,
+  div.containerdetails {
+    width: 90%;
+  }
+
+  table.funfacttable {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  aside#teaminfo {
+    width: 90%;
+    float: none;
+    margin: 20px auto;
+  }
+}
+
 
 /* Style for container divs */
 div.container {
@@ -136,6 +161,15 @@ aside{
   background-color: #f4f4f9;
   border-radius: 6px;
   margin-top: 10%;
+}
+
+/* Responsive adjustments for aside */
+@media (max-width:768px) {
+ aside#teaminfo {
+  float:none;
+  width:90%;
+  margin:20px auto;
+ } 
 }
 
 .jobscontainer{
@@ -262,6 +296,7 @@ h2.team {
   margin-top: 20px;
 }
 
+/* Style for fun facts table */
 table.funfacttable {
   width: 80%;
   margin: 20px auto;
@@ -270,28 +305,42 @@ table.funfacttable {
   text-align: center;
 }
 
+/* Hover effect for fun facts table */
 table.funfacttable:hover {
   transform: scale(1.02);
   transition: all 0.3s ease;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Border styles for funfacttable, td, and th */
 table.funfacttable,td,th{border: 1px solid black;}
 
+/* Padding for funfacttable cells */
 table.funfacttable th, table.funfacttable td {
   padding: 15px;
 }
 
+/* Header styles for funfacttable */
 table.funfacttable th {
   background-color: #444754;
   color: white;
 }
 
+/* Header styling */
 h2#funfacts {
   text-align: center;
   margin-top: 20px;
 }
 
+/* Caption styles for funfacttable */
+table.funfacttable caption {
+  caption-side: top;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Style for detailed container div */
 div.containerdetails {
   width: 40%;
   margin: 20px auto;
@@ -304,23 +353,24 @@ div.containerdetails {
   justify-content: space-between;
 }
 
+/* Style for group photo */
 .group-photo {
-  display: flex;
+  display: block;
   max-width: 100%;
   height: auto;
   margin: 20px auto;
   border-radius: 8px;
   border: 3px solid rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
 }
 
+/* Header style for detailed container */
 div.containerdetails h2 {
   text-align: center;
   margin-bottom: 15px;
 }
 
-aside{ 
+/* Style for aside element in about page */
+aside#teaminfo{ 
   width: 25%; 
   float: right; 
   border: 2px solid #444754;
@@ -331,12 +381,48 @@ aside{
   margin-top: 10%;
 }
 
-aside:hover {
+/* Hover effect for aside in about page */
+aside#teaminfo:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
   transition: all 0.3s ease;
 }
 
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  div.container,
+  div.containerdetails {
+    width: 80%;
+  }
+
+  aside#teaminfo {
+    width: 35%;
+    float: none;
+    margin: 20px auto;
+  }
+}
+
+/* Further responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.5em;
+  }
+
+  div.container,
+  div.containerdetails {
+    padding: 15px;
+  }
+
+  table.funfacttable th,
+  table.funfacttable td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  aside#teaminfo {
+    font-size: 14px;
+  }
+}
 /* START OF APPLY PAGE STYLES
     
 */
