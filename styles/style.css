@@ -9,7 +9,6 @@ description: css stylesheet for group project
 /* ============================= */
 /* Start of Home Page styles (index.html) */
 /* ============================= */
-
 header { 
   display: flex; /* Flexbox layout for navbar, logo and title */             
   justify-content: space-between; /* Space between navbar, logo and title */
@@ -18,27 +17,23 @@ header {
   padding: 20px; /* Inner spacing */
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Dark drop shadow */
 }
-
 header h1 {
   color: #fff; /* White text for title */
   margin: 0; /* Removes default margin */
   font-family: Arial, sans-serif; /* Sans-serif font */
 }
-
 body { /* White background */
   background-color: white; /* White background */
   font-family: Arial, sans-serif; /* Sans-serif font */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
 }
-
 .navbar { /* Navigation bar styles */
   text-align: center; /* Aligns text */
   margin: 0; /* Removes margin */  
   padding: 0; /* Removes padding */
   margin-left: auto; /* Pushes navbar items to the left in flex */
 }
-
 .navbar a { 
   text-decoration: none; /* Remove underline from links */
   transition: transform  0.3s ease; /* Smooth hover effect */
@@ -46,17 +41,14 @@ body { /* White background */
   color: white; /* White text links */
   margin-left: 20px; /* Spacing between nav items */
 } 
-
 .navbar a:hover {
   transform: translateY(-5px); /* Hover effect: slight lift */
   color: white;  /* Keep text white on hover */
 } 
-
 .navbar a.active  { 
   font-weight: bold; /* Bold active page link */    
   border-bottom: 2px solid #fff; /* Underline effect with white line */
 } 
-
 footer {
   display: flex; /* Flexbox for even spacing */
   justify-content: space-evenly;  /* Even spacing between items */
@@ -67,16 +59,13 @@ footer {
   padding: 15px;  /* Inner spacing */
   margin-top: 30px; /* Space above footer */
 }
-
 footer a {
   color: #ffcc00; /* Yellow links */
   text-decoration: underline; /* Underline for visibility */
 }
-
 footer a:hover {
   color: #fff; /* White links on hover */
 }
-
 .main-section {
   background: linear-gradient(rgba(68, 71, 84, 0.8), rgba(68, 71, 84, 0.8)), url('../images/abstract.jpg'); /* Overlay dark gradient on background image */
   background-size: cover; /* Image covers entire section */
@@ -90,59 +79,49 @@ footer a:hover {
   color: white; /* White text for readability */
   position: relative; /* Positioning for layering if needed */
 }
-
 .main-content h2 {
   font-size: 3rem; /* Large headline */
   margin-bottom: 20px; /* Space below heading */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for readability */
   
 }
-
 .main-subtitle {
   font-size: 1.3rem; /* Medium subtitle text */
   margin-bottom: 30px; /* Space below subtitle */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Shadow for readability */
 }
-
 .header-left {
   display: flex; /* Flexbox for logo + title */
   align-items: center; /* Vertically align items */
   gap: 20px; /* Space between logo and title */
 }
-
 .header-logo {
   height: 60px; /* Logo height */
   width: auto;  /* Keep aspect ratio */
   border-radius: 5px; /* Slightly rounded edges */
   margin-top: 15px; /* Push down from top */
-  
 }
-
 .company-details {
   background-color: #f9f9f9; /* Light grey background */
   padding: 50px 20px; /* Spacing around section */
   text-align: center; /* Centered text */
 }
-
 .company-details h2 {
   font-size: 2rem; /* Large section title */
   margin-bottom: 20px; /* Space below heading */
   color: #444754; /* Dark grey-blue text */
 }
-
 .company-details p {
   font-size: 1.1rem; /* Slightly larger paragraph text */
   line-height: 1.6; /* Better readability */
   color: #333; /* Dark grey text */
   margin-bottom: 20px; /* Space between paragraphs */
 } 
-
 .details-container {
   max-width: 1000px; /* Constrain content width */
   margin: 0 auto; /* Center container */
   text-decoration: none; /* Prevent accidental text decoration */
 }
-
 .details-content {
   display: flex; /* Flexbox layout */
   align-items: center; /* Vertically center items */
@@ -151,21 +130,18 @@ footer a:hover {
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
   text-decoration: none; /* Prevent accidental link styling */
 }
-
 body h1{
   text-align: center;
   margin-top: 20px;
 }
-
-
 /* ============================= */
 /* End of Home Page Styles */
 /* ============================= */
 
+
 /* ============================= */
 /* Start of Job Page styles (jobs.html) */
 /* ============================= */
-
 aside{ 
   width: 25%; /* Aside width set to 25% of the page */
   float: right; /* Float aside to the right of the page */
@@ -176,7 +152,6 @@ aside{
   border-radius: 6px; /* Rounded corners */
   margin-top: 10%; /* Sets margin from top of aside by 10% */
 }
-
 .jobscontainer{ 
   width: 80%; /* Container width set to 80% of the page */
   margin: 20px auto; /* Sets margin to 20px */
@@ -186,24 +161,20 @@ aside{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft drop shadow for depth */
   background-color: #f9f9f9; /* Light background color */
 }
-
 .jobscontainer h2 {
   margin-top: 10px; /* Sets spacing above job title */
   font-size: 1.4em; /* Slightly larger heading */
   color: #444754; /* Dark grey text */
 }
-
 .jobscontainer h3 {
   margin-top: 15px; /* Spacing above subheadings */
   color: #444754; /* Black text */
   font-size: 1.2em;  /* Medium heading size */
 }
-
 .apply-button {
   margin-top: 25px; /* Space above the apply button */
   text-align: left; /* Align button to the left */
 }
-
 .apply-button a {
   display: inline-block; /* Makes link behave like a button */
   background-color: #444754; /* Dark grey-blue button background */
@@ -214,12 +185,10 @@ aside{
   font-weight: bold; /* Makes text bold */
   transition: background-color 0.3s ease, transform 0.2s ease; /* Hover effects */
 }
-
 .apply-button a:hover {
   background-color: #333; /* Darker background on hover */
   transform: translateY(-2px); /* Slight lift animation on hover */
 }
-
 /* ============================= */
 /* End of Job Page styles (jobs.html) */
 /* ============================= */
