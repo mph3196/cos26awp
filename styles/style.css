@@ -30,8 +30,6 @@ body { /* White background */
 }
 .navbar { /* Navigation bar styles */
   text-align: center; /* Aligns text */
-  margin: 0; /* Removes margin */  
-  padding: 0; /* Removes padding */
   margin-left: auto; /* Pushes navbar items to the left in flex */
 }
 .navbar a { 
@@ -127,12 +125,12 @@ footer a:hover {
   justify-content: space-between; /* Space between elements */
   gap: 30px; /* Space between items */
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  text-decoration: none; /* Prevent accidental link styling */
 }
 body h1{
   text-align: center;
   margin-top: 20px;
 }
+
 /* ============================= */
 /* End of Home Page Styles */
 /* ============================= */
@@ -140,6 +138,7 @@ body h1{
 /* ============================= */
 /* Start of Job Page styles (jobs.html) */
 /* ============================= */
+
 aside{ 
   width: 25%; /* Aside width set to 25% of the page */
   float: right; /* Float aside to the right of the page */
@@ -189,6 +188,7 @@ aside{
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
 /* ============================= */
 /* End of Job Page styles (jobs.html) */
 /* ============================= */
