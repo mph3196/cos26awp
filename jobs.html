@@ -12,8 +12,8 @@
   <title>JSM Jobs Applications Page</title> <!-- Title -->
 
   <!-- Stylesheet References -->
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/style.css"> <!-- Link to internal stylesheet for main styles. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Link to external stylesheet for navigation bar icons -->
 </head>
 <body>
 
@@ -24,14 +24,14 @@
     </div>
 
     <nav class="navbar"> <!-- Navigation Menu -->
-      <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> <!-- Link to other webpage -->
       <a class="active" href="jobs.html"><i class="fa fa-fw fa-user"></i> Jobs</a> <!-- Active Webpage -->
-      <a href="apply.html"><i class="fa fa-fw fa-search"></i> Apply</a>
-      <a href="about.html"><i class="fa fa-fw fa-star"></i> About Us</a>
+      <a href="apply.html"><i class="fa fa-fw fa-search"></i> Apply</a> <!-- Link to other webpage -->
+      <a href="about.html"><i class="fa fa-fw fa-star"></i> About Us</a> <!-- Link to other webpage -->
     </nav>
   </header>
 
-  <aside>
+  <aside> <!--Required aside -->
     <h2>Why Work With Us?</h2>
     <p>
       At JSM University, we are committed to advancing digital learning and research. 
@@ -40,34 +40,40 @@
     </p>
   </aside>
 
-  <!-- Application 1 -->
-  <section class="jobscontainer">
-    <div class="header">Reference Number: G03A1</div>
-    <h2>IT Support Officer</h2>
+<!-- =============================-->
+<!-- Below lists 4 'applications', each structured within a section jobscontainer class. The reference number is within a header class and the apply button within the apply-button class -->
+<!-- All information regarding JSM University content within the jobs container credited to The Claude AI LLM: https://claude.ai/new -->
+<!-- Requirements state "one ordered list, one unordered list" - Assumed this meant per section / jobs container application -->
+<!-- =============================-->
 
-    <p><strong>Salary:</strong> $78,000 – $85,000 per annum</p>
-    <p><strong>Reports to:</strong> Manager, Digital Learning & Research Support</p>
-    <p><strong>Short Description:</strong> Join our IT department to provide 
+  <!-- Application 1 -->
+  <section class="jobscontainer"> <!-- Section -->
+    <div class="header">Reference Number: G03A1</div> <!-- Reference number (5 alphanumeric) -->
+    <h2>IT Support Officer</h2> <!-- Title --> <!-- Heading of one level -->
+
+    <p><strong>Salary:</strong> $78,000 – $85,000 per annum</p>  <!-- Salary -->
+    <p><strong>Reports to:</strong> Manager, Digital Learning & Research Support</p>  <!-- Reporting Line -->
+    <p><strong>Short Description:</strong> Join our IT department to provide  <!-- Short Description -->
       frontline support for digital learning platforms and research technologies 
       that enhance teaching, learning, and innovation.
     </p>
 
-    <h3>Key Responsibilities</h3>
-    <ul>
+    <h3>Key Responsibilities</h3> <!-- Key Responsibilities --> <!-- Heading of another level -->
+    <ul> <!-- Unordered list. -->
       <li>Provide technical support for digital learning platforms (LMS, collaboration tools).</li>
       <li>Assist researchers with software, data storage, and secure computing resources.</li>
       <li>Maintain system documentation and user guides.</li>
       <li>Ensure accessibility and compliance with IT security policies.</li>
     </ul>
 
-    <h3>Essential Requirements</h3>
-    <ol>
+    <h3>Essential Requirements</h3> <!-- Essential Requirements -->
+    <ol> <!-- Ordered list, -->
       <li>Bachelor’s degree in Information Technology or related field.</li>
       <li>Experience supporting digital learning or research systems.</li>
       <li>Strong communication and problem-solving skills.</li>
     </ol>
 
-    <h3>Preferable Requirements</h3>
+    <h3>Preferable Requirements</h3> <!-- Preferable Requirements -->
     <ul>
       <li>Knowledge of accessibility standards in digital education.</li>
       <li>Experience with cloud-based platforms (e.g., Microsoft Azure, AWS).</li>
@@ -81,28 +87,28 @@
   <!-- End of Application 1 -->
 
   <!-- Application 2 -->
-  <section class="jobscontainer">
-    <div class="header">Reference Number: G03C3</div>
-    <h2>Research Data Analyst</h2>
+  <section class="jobscontainer">  <!-- Section -->
+    <div class="header">Reference Number: G03C3</div> <!-- Reference number (5 alphanumeric) -->
+    <h2>Research Data Analyst</h2> <!-- Title --> <!-- Heading of one level -->
 
-    <p><strong>Salary:</strong> $88,000 – $95,000 per annum</p>
-    <p><strong>Reports to:</strong> Senior Research IT Coordinator</p>
-    <p><strong>Short Description:</strong> Provide data management, analytics, and visualization support for academic research projects.</p>
-
-    <h3>Key Responsibilities</h3>
-    <ul>
+    <p><strong>Salary:</strong> $88,000 – $95,000 per annum</p> <!-- Salary -->
+    <p><strong>Reports to:</strong> Senior Research IT Coordinator</p> <!-- Reporting Line -->
+    <p><strong>Short Description:</strong> Provide data management, analytics, and visualization support for academic research projects.</p> <!-- Short Description -->
+ 
+    <h3>Key Responsibilities</h3> <!-- Key Responsibilities --> <!-- Heading of another level -->
+    <ul> <!-- Unordered list. -->
       <li>Support researchers with secure data storage solutions.</li>
       <li>Assist in statistical analysis and visualization.</li>
       <li>Ensure compliance with data security and ethics requirements.</li>
     </ul>
 
-    <h3>Essential Requirements</h3>
-    <ol>
+    <h3>Essential Requirements</h3>  <!-- Essential Requirements -->
+    <ol> <!-- Ordered list, -->
       <li>Bachelor’s Degree in Data Science, Statistics, or IT.</li>
       <li>Experience with R, Python, or SPSS.</li>
     </ol>
 
-    <h3>Preferable Requirements</h3>
+    <h3>Preferable Requirements</h3> <!-- Preferable Requirements -->
     <ul>
       <li>Knowledge of big data tools (Hadoop, Spark).</li>
       <li>Experience in higher education research projects.</li>
@@ -115,28 +121,28 @@
   <!-- End of Application 2 -->
 
   <!-- Application 3 -->
-  <section class="jobscontainer">
-    <div class="header">Reference Number: G03B2</div>
-    <h2>Learning Technology Specialist</h2>
+  <section class="jobscontainer"> <!-- Section -->
+    <div class="header">Reference Number: G03B2</div> <!-- Reference number (5 alphanumeric) -->
+    <h2>Learning Technology Specialist</h2> <!-- Title --> <!-- Heading of one level -->
 
-    <p><strong>Salary:</strong> $82,000 – $90,000 per annum</p>
-    <p><strong>Reports to:</strong> Manager, Digital Learning & Research Support</p>
-    <p><strong>Short Description:</strong> Support academics in designing and delivering online and blended learning experiences using the university’s digital platforms.</p>
+    <p><strong>Salary:</strong> $82,000 – $90,000 per annum</p>  <!-- Salary -->
+    <p><strong>Reports to:</strong> Manager, Digital Learning & Research Support</p> <!-- Reporting Line -->
+    <p><strong>Short Description:</strong> Support academics in designing and delivering online and blended learning experiences using the university’s digital platforms.</p> <!-- Short Description -->
 
-    <h3>Key Responsibilities</h3>
-    <ul>
+    <h3>Key Responsibilities</h3> <!-- Key Responsibilities --> <!-- Heading of another level -->
+    <ul> <!-- Unordered list. -->
       <li>Train staff in effective use of the Learning Management System (LMS).</li>
       <li>Collaborate on course design to ensure accessibility and engagement.</li>
       <li>Evaluate and recommend new learning technologies.</li>
     </ul>
 
-    <h3>Essential Requirements</h3>
-    <ol>
+    <h3>Essential Requirements</h3> <!-- Essential Requirements -->
+    <ol> <!-- Ordered list, -->
       <li>Bachelor’s in Education Technology, IT, or similar.</li>
       <li>Experience with LMS platforms (e.g., Canvas, Blackboard).</li>
     </ol>
 
-    <h3>Preferable Requirements</h3>
+    <h3>Preferable Requirements</h3> <!-- Preferable Requirements -->
     <ul>
       <li>Knowledge of instructional design frameworks.</li>
       <li>Familiarity with accessibility standards (WCAG).</li>
@@ -149,28 +155,28 @@
   <!-- End of Application 3 -->
 
   <!-- Application 4 -->
-  <section class="jobscontainer">
-    <div class="header">Reference Number: G03D4</div>
-    <h2>Systems Administrator</h2>
+  <section class="jobscontainer"> <!-- Section -->
+    <div class="header">Reference Number: G03D4</div> <!-- Reference number (5 alphanumeric) -->
+    <h2>Systems Administrator</h2> <!-- Title --> <!-- Heading of one level -->
 
-    <p><strong>Salary:</strong> $92,000 – $105,000 per annum</p>
-    <p><strong>Reports to:</strong> Head of IT Infrastructure</p>
-    <p><strong>Short Description:</strong> Maintain and secure the IT infrastructure supporting digital learning and research systems.</p>
+    <p><strong>Salary:</strong> $92,000 – $105,000 per annum</p> <!-- Salary -->
+    <p><strong>Reports to:</strong> Head of IT Infrastructure</p>  <!-- Reporting Line -->
+    <p><strong>Short Description:</strong> Maintain and secure the IT infrastructure supporting digital learning and research systems.</p> <!-- Short Description -->
 
-    <h3>Key Responsibilities</h3>
-    <ul>
+    <h3>Key Responsibilities</h3> <!-- Key Responsibilities --> <!-- Heading of another level -->
+    <ul> <!-- Unordered list. -->
       <li>Manage servers, networks, and cloud environments.</li>
       <li>Ensure uptime and security of digital platforms.</li>
       <li>Implement system updates, patches, and backups.</li>
     </ul>
 
-    <h3>Essential Requirements</h3>
-    <ol>
+    <h3>Essential Requirements</h3> <!-- Essential Requirements -->
+    <ol> <!-- Ordered list, -->
       <li>Bachelor’s Degree in Information Systems or Computer Science.</li>
       <li>Experience with Linux/Windows server administration.</li>
     </ol>
 
-    <h3>Preferable Requirements</h3>
+    <h3>Preferable Requirements</h3>  <!-- Preferable Requirements -->
     <ul>
       <li>Knowledge of Cybersecurity frameworks.</li>
       <li>Cloud certification (Azure, AWS, or GCP).</li>
@@ -183,10 +189,10 @@
   <!-- End of Application 4 -->
 
   <footer> <!-- Footer with Mail, Github and Jira Link -->
-    &copy; JSM 2025 
-    <a href="mailto:info@JSMUniversity.com">Contact us here!</a>
-    <a href="https://github.com/mph3196/cos26awp.git">GitHub</a>
-    <a href="https://jsm-swinburne.atlassian.net/jira/software/projects/JU/summary?atlOrigin=eyJpIjoiZThkODRkOGEwM2RmNDU3Y2FjN2M1NzE4M2I3OGViMTAiLCJwIjoiaiJ9">Jira</a>
+    &copy; JSM 2025  
+    <a href="mailto:info@JSMUniversity.com">Contact us here!</a> <!-- Link to university mail -->
+    <a href="https://github.com/mph3196/cos26awp.git">GitHub</a> <!-- Link to Github  -->
+    <a href="https://jsm-swinburne.atlassian.net/jira/software/projects/JU/summary?atlOrigin=eyJpIjoiZThkODRkOGEwM2RmNDU3Y2FjN2M1NzE4M2I3OGViMTAiLCJwIjoiaiJ9">Jira</a> <!-- Link to Jira Page  -->
   </footer>
 
 </body>
