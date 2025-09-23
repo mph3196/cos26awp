@@ -83,7 +83,6 @@ footer a:hover {
   font-size: 3rem; /* Large headline */
   margin-bottom: 20px; /* Space below heading */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for readability */
-  
 }
 .main-subtitle {
   font-size: 1.3rem; /* Medium subtitle text */
@@ -138,7 +137,6 @@ body h1{
 /* End of Home Page Styles */
 /* ============================= */
 
-
 /* ============================= */
 /* Start of Job Page styles (jobs.html) */
 /* ============================= */
@@ -146,20 +144,21 @@ aside{
   width: 25%; /* Aside width set to 25% of the page */
   float: right; /* Float aside to the right of the page */
   border: 2px solid #444754; /* Dark grey border */
-  margin: 30px; /* Sets margin to 25px */
+  margin: 25px; /* Sets margin to 25px */
   padding: 15px; /* Sets padding to 15px */
   background-color: #f4f4f9; /* Sets background to an off white */
   border-radius: 6px; /* Rounded corners */
-  
+  margin-top: 2%;
 }
 .jobscontainer{ 
-  width: 80%; /* Container width set to 80% of the page */
+  width: 70%; /* Container width set to 80% of the page */
   margin: 20px auto; /* Sets margin to 20px */
   padding: 20px; /* Sets padding to 20px, spacing around content*/
   border: 1px solid #ccc; /* Light grey border */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft drop shadow for depth */
   background-color: #f9f9f9; /* Light background color */
+  margin-left: 2%;
 }
 .jobscontainer h2 {
   margin-top: 10px; /* Sets spacing above job title */
@@ -186,27 +185,10 @@ aside{
   transition: background-color 0.3s ease, transform 0.2s ease; /* Hover effects */
 }
 .apply-button a:hover {
-  background-color: #333; /* Darker background on hover */
-  transform: translateY(-2px); /* Slight lift animation on hover */
+  background-color: #4447ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-
-.jobs-photo {
-  width: 80%; /* Container width set to 80% of the page */
-  margin: 20px auto; /* Sets margin to 20px */
-  padding: 20px; /* Sets padding to 20px, spacing around content*/
-  border: 1px solid #ccc; /* Light grey border */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft drop shadow for depth */
-  background-color: #f9f9f9; /* Light background color */
-  height: 250px; /* Section height */
-}
-.jobsphoto-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-
-}
-
-
 /* ============================= */
 /* End of Job Page styles (jobs.html) */
 /* ============================= */
