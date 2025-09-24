@@ -193,6 +193,12 @@ aside{
 /* End of Job Page styles (jobs.html) */
 /* ============================= */
 
+/* 
+
+START of About Page styles (about.html)
+
+*/
+
 
 /* Style for the about us paragraph */
 p.aboutus {
@@ -205,6 +211,7 @@ p.aboutus {
 }
 
 /* Responsive adjustments */
+/*- Used GenAI GPT5 */
 @media (max-width: 768px) {
   p.aboutus {
     font-size: 16px;
@@ -227,7 +234,6 @@ p.aboutus {
     margin: 20px auto;
   }
 }
-
 
 /* Style for container divs */
 div.container {
@@ -260,10 +266,8 @@ div.header {
   margin-bottom: 15px;
 }
 
-
-
-
 /* Responsive adjustments for aside */
+/*- Used GenAI GPT5 */
 @media (max-width:768px) {
  aside#teaminfo {
   float:none;
@@ -271,8 +275,6 @@ div.header {
   margin:20px auto;
  } 
 }
-
-
 
 h2.team {
   text-align: center;
@@ -367,11 +369,12 @@ aside#teaminfo{
 /* Hover effect for aside in about page */
 aside#teaminfo:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
+  transform: translateY(5px);
   transition: all 0.3s ease;
 }
 
 /* Responsive adjustments */
+/*- Used GenAI GPT5 */
 @media (max-width: 1024px) {
   div.container,
   div.containerdetails {
@@ -386,6 +389,7 @@ aside#teaminfo:hover {
 }
 
 /* Further responsive adjustments for smaller screens */
+/*- Used GenAI GPT5 */
 @media (max-width: 480px) {
   h1, h2 {
     font-size: 1.5em;
@@ -406,6 +410,9 @@ aside#teaminfo:hover {
     font-size: 14px;
   }
 }
+
+/* END of About Page styles (about.html) */
+
 /* START OF APPLY PAGE STYLES
     
 */
