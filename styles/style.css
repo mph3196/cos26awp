@@ -383,11 +383,13 @@ aside:hover {
 
 .form-container {
   display: grid;
-  max-width: 70%;
+  max-width: 60%;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
 }
 
 .form-group {
@@ -444,7 +446,7 @@ textarea {
 }
 
 /* Add focus indicators to radio and checkbox buttons for accessibility 
-    - focus indicators made by Deepseek V3 chat.deepseek.com */
+    - focus indicators made with the help of Deepseek V3 chat.deepseek.com */
 .checkmark-container input:focus ~ .checkmark {
   outline: 2px solid #4447ff;
   outline-offset: 2px;
@@ -598,18 +600,17 @@ legend {
   color: #4447ff;
 }
 
+#otherSkillsText {
+  font-family: Arial, sans-serif;
+}
+
 #requiredNote {
   display: block;
   text-align: right;
   margin-top: 10px;
 }
 
-.error {
-  color: #880000;
-  font-size: 14px;
-  margin-top: 5px;
-}
-
+/* "Two column" area for my grid, when I want two fields to appear on the same row of a form */
 .two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -663,6 +664,9 @@ legend {
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
+#apply-container {
+  font-weight: bold;
+}
 /* END OF APPLY PAGE STYLES */
 
 /* Media queries for responsiveness
