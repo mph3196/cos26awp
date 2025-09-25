@@ -124,7 +124,6 @@ footer a:hover {
   align-items: center; /* Vertically center items */
   justify-content: space-between; /* Space between elements */
   gap: 30px; /* Space between items */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 body h1{
   text-align: center;
