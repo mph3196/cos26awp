@@ -75,7 +75,6 @@ footer a:hover {
   justify-content: center; /* Center content horizontally */
   text-align: center; /* Center text */
   color: white; /* White text for readability */
-  position: relative; /* Positioning for layering if needed */
 }
 .main-content h2 {
   font-size: 3rem; /* Large headline */
