@@ -7,13 +7,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="Home page for JSM website">
-  <meta name="keywords" content="HTML5, CSS layout, web technology project">
-  <meta name="author" content="Morgan Hopkins, Jonathon Taylor, Shaun Vambe">
+  <meta name="keywords" content="Company Details, Learning, Research, JSM University">
+  <meta name="author" content="Jonathon Taylor">
   <title>JSM Home Page</title> <!-- Title -->
 
   <!-- Stylesheet References -->
   <link rel="stylesheet" href="styles/style.css"> <!-- Link to internal stylesheet for main styles. -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Link to external stylesheet for navigation bar icons -->
+  
+  <style>
+    /* Embedded CSS Example*/
+    .main-content {
+      position: relative;
+      padding: 40px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 15px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+  
 </head>
 <body>
 
@@ -32,7 +45,7 @@
 
     <nav class="navbar"> <!-- Navigation Menu -->
       <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> <!-- Active Webpage -->
-      <a href="jobs.html"><i class="fa fa-fw fa-user"></i> Jobs</a> <!-- Link to other webpage -->
+      <a href="jobs.html"><i class="fa fa-fw fa-user"></i> Careers</a> <!-- Link to other webpage -->
       <a href="apply.html"><i class="fa fa-fw fa-search"></i> Apply</a> <!-- Link to other webpage -->
       <a href="about.html"><i class="fa fa-fw fa-star"></i> About Us</a> <!-- Link to other webpage -->
     </nav>
@@ -40,7 +53,7 @@
 
   <section class="main-section"> <!-- Main Section including content and subtitle -->
     <div class="main-content">
-      <h2>Advancing Digital Learning & Research Department</h2>
+      <h2>Digital Learning & Research Department</h2>
       <p class="main-subtitle">Innovating Tomorrow's Digital Education</p> <!-- Slogan -->
     </div>
   </section>
