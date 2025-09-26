@@ -40,7 +40,7 @@ body { /* White background */
   margin-left: 20px; /* Spacing between nav items */
 } 
 .navbar a:hover {
-  transform: translateY(-5px); /* Hover effect: slight lift */
+  transform: translateY(-2px); /* Hover effect: slight lift */
   color: white;  /* Keep text white on hover */
 } 
 .navbar a.active  { 
@@ -184,7 +184,7 @@ aside{
 }
 .apply-button a:hover {
   background-color: #4447ff;
-  transform: translateY(-5px);
+  transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
