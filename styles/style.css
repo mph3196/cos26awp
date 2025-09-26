@@ -525,7 +525,7 @@ textarea {
   - https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
 
 .checkmark-container {
-  display: block;
+  display: inline-block;
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
@@ -533,6 +533,7 @@ textarea {
   font-size: 16px;
   transition: all 0.2s ease;
 }
+
 
 /* Add focus indicators to radio and checkbox buttons for accessibility 
     - focus indicators made with the help of Deepseek V3 chat.deepseek.com */
@@ -563,6 +564,8 @@ textarea {
   height: 25px;
   width: 25px;
   background-color: #eeeeee;
+  border: 2px solid #000000;
+  box-sizing: border-box;
   transition: all 0.2s ease;
 }
 
@@ -578,28 +581,24 @@ textarea {
   transform: scale(1.1);
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
+/* Create and style the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
   transition: all 0.2s ease;
 }
 
 /* Show the checkmark when checked */
 .checkmark-container input:checked ~ .checkmark:after {
   display: block;
-}
-
-/* Custom checkmark styling */
-.checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid #ffffff;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
 }
 
 /* Custom radio button styling*/
@@ -634,6 +633,8 @@ textarea {
   background-color: #eeeeee;
   border-radius: 50%;
   transition: all 0.3s ease;
+  border: 2px solid #000000;
+  box-sizing: border-box;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -664,8 +665,11 @@ textarea {
 
 /* Style the indicator dot */
 .radio-button:after {
-  top: 9px;
-  left: 9px;
+  content: "";
+  position: absolute;
+  display: none;
+  top: 7px;
+  left: 7px;
   width: 9px;
   height: 9px;
   border-radius: 50%;
